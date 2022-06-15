@@ -13,7 +13,7 @@ const addTask = () => {
   const prevStorage = JSON.parse(localStorage.getItem('todo'));
   if (prevStorage && prevStorage.length) {
     return prevStorage;
-    }
+  }
   const data = [];
   updateStorage(data);
   return data;
