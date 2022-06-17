@@ -9,8 +9,11 @@ const form = document.querySelector('form');
 
 const tasks = new Tasks();
 
+render(tasks);
+
 clearAll.addEventListener('click', () => {
   tasks.clearCompleted();
+  render(tasks);
 });
 
 form.addEventListener('submit', (e) => {
@@ -21,4 +24,8 @@ form.addEventListener('submit', (e) => {
   });
 
   form.reset();
+
+  render(tasks);
 });
+
+handleDrag(tasks);
