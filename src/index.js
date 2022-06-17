@@ -1,7 +1,8 @@
-import 'material-icons/iconfont/material-icons.css';
 import './style.css';
 
-import Tasks from './class';
+import render from './render.js';
+import Tasks from './class.js';
+import handleDrag from './dragging.js';
 
 const clearAll = document.querySelector('.clear');
 const form = document.querySelector('form');
